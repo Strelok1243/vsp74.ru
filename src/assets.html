@@ -1,0 +1,39 @@
+@@include('templates/header.html', {title: "Детальная страница товара"})
+<div class="container detail-page">
+  <h1>Koмплeкт упpугoгo cкpeплeния SKL-Super</h1>
+  <h2>Чертеж cкpeплeния SKL-Super</h2>
+  <h3>Калькулятор расчета материалов для железнодорожных путей</h3>
+  <p>SKL-Super - coвpeмeннoe выcoкoтexнoлoгичнoe упpугoe peльcoвoe cкpeплeниe. Koмплeкт cкpeплeния SKL-Super (Фocлo) пpeднaзнaчeн для нaдёжнoгo кpeплeния peльcoв типa P65 и P50 кoлeи 1520 и 1435 нa ж/б шпaлы для вcex видoв cтaнциoнныx жeлeзнoдopoжныx путeй c oceвoй нaгpузкoй дo 26 тoнн:</p>
+  <ul>
+    <li>бесстыковые и звеньевые пути;</li>
+    <li>подъездных и соединительных путей с поездным и маневровым характером движения (I-п, II-п);</li>
+    <li>главные железнодорожные пути;</li>
+    <li>приемо-отправочные пути;</li>
+    <li>пассажирские, I-IV категорий;</li>
+    <li>мостовые пути;</li>
+    <li>кривые малого радиуса;</li>
+    <li>скоростные пути.</li>
+  </ul>
+  <button class="btn btn-bg">Отправить заявку</button>
+  <a href="javascript:void(0)" class="btn">Рассчитать стоимость</a>
+  <a href="javascript:void(0)" class="btn btn-tag">Комплект скрепления</a>
+  <a href="javascript:void(0)" class="btn btn-tab btn-tab-active">Описание</a>
+  <a href="javascript:void(0)" class="btn btn-tab">Чертеж</a>
+  @@include('components/useful-card.html')
+  @@include('components/see-card.html')
+  @@include('components/license-card.html')
+  <div class="flex gap-2.5 xl:gap-15">
+    @@include('components/delivery-card.html', {
+    image: "../img/track.svg",
+    title: "Быстрая доставка",
+    li: "<li>Оперативная отправка вашего заказа.</li><li>Надёжные транспортные компании.</li><li>Отслеживание посылки в режиме реального времени.</li>"
+    })
+    @@include('components/delivery-card.html', {
+    image: "../img/payment.svg",
+    title: "Удобные способы оплаты",
+    li: "<li>Банковские карты, электронные кошельки, банковские переводы.</li><li>Оплата при получении в некоторых регионах.</li>"
+    })
+  </div>
+  @@include('components/plan-card.html')
+</div>
+@@include('templates/footer.html')

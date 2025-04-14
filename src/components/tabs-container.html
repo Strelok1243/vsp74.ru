@@ -1,0 +1,50 @@
+<div class="tab-container" :class="tabFixed ? 'tab-container-fixed' : ''">
+  <a
+    href="#description"
+    class="btn btn-tab"
+    :class="selectedTab == 'description' ? 'btn-tab-active' : ''"
+    @click="selectedTab = 'description'"
+  >Описание</a>
+  <a
+    href="#planes"
+    class="btn btn-tab"
+    :class="selectedTab == 'planes' ? 'btn-tab-active' : ''"
+    @click="selectedTab = 'planes'"
+  >Чертеж</a>
+  <a
+    href="#useful"
+    class="btn btn-tab"
+    :class="selectedTab == 'useful' ? 'btn-tab-active' : ''"
+    @click="selectedTab = 'useful'"
+  >Применение</a>
+  <a
+    href="#characters"
+    class="btn btn-tab"
+    :class="selectedTab == 'characters' ? 'btn-tab-active' : ''"
+    @click="selectedTab = 'characters'"
+  >Состав и характеристики</a>
+  <a
+    href="#certificate"
+    class="btn btn-tab"
+    :class="selectedTab == 'certificate' ? 'btn-tab-active' : ''"
+    @click="selectedTab = 'certificate'"
+  >Сертификаты</a>
+  <a
+    href="#calc"
+    class="btn btn-tab"
+    :class="selectedTab == 'calc' ? 'btn-tab-active' : ''"
+    @click="selectedTab = 'calc'"
+  >Калькулятор пути</a>
+  <a
+    href="#services"
+    class="btn btn-tab"
+    :class="selectedTab == 'services' ? 'btn-tab-active' : ''"
+    @click="selectedTab = 'services'"
+  >Услуги</a>
+  <a
+    href="#delivery"
+    class="btn btn-tab"
+    :class="selectedTab == 'delivery' ? 'btn-tab-active' : ''"
+    @click="selectedTab = 'delivery'"
+  >Доставка и Оплата</a>
+</div>

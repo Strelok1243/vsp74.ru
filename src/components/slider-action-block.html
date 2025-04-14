@@ -1,0 +1,46 @@
+<div class="action-block">
+  <div class="price-block">
+    <div class="flex flex-row-reverse justify-between xl:flex-row items-center">
+      <span class="available">В наличии</span>
+      <div class="dots">
+        <label for="rub">
+          <input type="radio" name="currency" id="rub" value="RUB" checked>
+          <span>RUB</span>
+        </label>
+        <label for="kzt">
+          <input type="radio" name="currency" id="kzt" value="KZT">
+          <span>KZT</span>
+        </label>
+      </div>
+    </div>
+    <div class="price">
+      <span>Цена с НДС:</span>
+      <span>3 285 ₽/шт</span>
+    </div>
+    <div class="export">
+      <span>Цена на экспорт -10%</span>
+    </div>
+    <div class="flex gap-4">
+      <button class="btn btn-bg w-full">Купить</button>
+      <button class="btn basket"></button>
+    </div>
+  </div>
+  <div class="calc-block">
+    <span class="title">Введите данные для расчета:</span>
+    <div class="flex flex-wrap gap-2.5 odd">
+      <div class="input-block">
+        <label>Кол-во</label>
+        <input type="text" placeholder="1">
+      </div>
+      <div class="input-block">
+        <label>Кол-во, т</label>
+        <input type="text" placeholder="1">
+      </div>
+      <div class="sum">=</div>
+      <div class="input-block">
+        <label>Стоимость</label>
+        <input type="text" placeholder="1">
+      </div>
+    </div>
+  </div>
+</div>

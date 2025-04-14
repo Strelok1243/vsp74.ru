@@ -2,11 +2,56 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
-  .bg-tiles {
-    background-size: 73px 73px;
-    background-image: linear-gradient(currentColor 1px, transparent 1px),
-      linear-gradient(to right, currentColor 1px, transparent 1px);
-    @apply -m-0.5;
+@layer base {
+  @font-face {
+    font-family: 'Golos Text';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src:
+            url("../fonts/woff2/Golos-Text_Regular.woff2") format('woff2'),
+            url("../fonts/woff/Golos-Text_Regular.woff") format('woff'),
+            url("../fonts/ttf/Golos-Text_Regular.ttf") format('ttf');
+  }
+  @font-face {
+    font-family: 'Golos Text';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src:
+            url("../fonts/woff2/Golos-Text_Medium.woff2") format('woff2'),
+            url("../fonts/woff/Golos-Text_Medium.woff") format('woff'),
+            url("../fonts/ttf/Golos-Text_Medium.ttf") format('ttf');
+  }
+  @font-face {
+    font-family: 'Golos Text';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src:
+            url("../fonts/woff2/Golos-Text_DemiBold.woff2") format('woff2'),
+            url("../fonts/woff/Golos-Text_DemiBold.woff") format('woff'),
+            url("../fonts/ttf/Golos-Text_DemiBold.ttf") format('ttf');
+  }
+  @font-face {
+    font-family: 'Golos Text';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src:
+            url("../fonts/woff2/Golos-Text_Bold.woff2") format('woff2'),
+            url("../fonts/woff/Golos-Text_Bold.woff") format('woff'),
+            url("../fonts/ttf/Golos-Text_Bold.ttf") format('ttf');
+  }
+
+  @font-face {
+    font-family: 'Golos Text';
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src:
+            url("../fonts/woff2/Golos-Text_Black.woff2") format('woff2'),
+            url("../fonts/woff/Golos-Text_Black.woff") format('woff'),
+            url("../fonts/ttf/Golos-Text_Black.ttf") format('ttf');
   }
 }
